@@ -15,6 +15,7 @@ func logger(w http.ResponseWriter, r *http.Request, h http.Handler) {
 	h.ServeHTTP(w, r)
 	log.Println("[LOGGER1] Completed", time.Since(start).Milliseconds())
 }
+
 func logger2(w http.ResponseWriter, r *http.Request, h http.Handler) {
 	start := time.Now()
 	log.Print("[LOGGER2] Started")

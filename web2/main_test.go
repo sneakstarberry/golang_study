@@ -51,5 +51,4 @@ func TestUploadTest(t *testing.T) {
 	originFile.Read(originData)
 
 	assert.Equal(originData, uploadData)
-
 }
